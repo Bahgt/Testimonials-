@@ -1,0 +1,257 @@
+:root{
+
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+    
+    
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+
+
+
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color:var(--Light-grayish-blue) ;
+ 
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: 50% 50%;
+
+    margin: 0 auto;
+width: 85%;  
+height: 36rem;
+gap: 1.5rem;
+margin-top: 4rem;
+
+
+}
+.card{
+    border-radius: 8px ;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+.card img {
+    width: 2em;
+    border-radius: 50px;
+    border: 0.15rem solid hsla(0, 0%, 81.2%, 0.5);
+}
+.card h1{
+    font-size: 1.2rem;
+    position: absolute;
+    color: var(--Light-grayish-blue);
+    font-weight: 401;
+}
+.card .name {
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+    color: var(--Light-grayish-blue);
+    font-weight: 501;
+  }
+  .card .verified {
+    font-size: 0.8rem;
+    position: absolute;
+    left: 5rem;
+    top: 3rem;
+    color:  hsla(0, 0%, 81.2%, 0.5);
+    font-weight: 401;
+  }
+  .card p {
+    padding-top: 5rem;
+font-size: 0.85rem;
+line-height: 1.45;
+color:  hsla(0, 0%, 81.2%, 0.7);
+font-weight: 401;
+  }
+.Daniel {
+    background-color: var(--Moderate-violet);
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+}
+.Daniel .qoute {
+    font-size: 30rem;
+    font-family:fantasy;
+    color: hsla(0, 0%, 81.2%, 0.4);
+    position: absolute;
+    bottom: -11.7rem;
+    right: 6rem;
+    
+
+
+
+
+}
+.Daniel h1{
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+  }
+.jonathan {
+    background-color: var(--Very-dark-grayish-blue);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.jonathan h1{
+    width: 13rem;
+}
+
+.kira{
+    background-color: var(--White);
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+.kira .name {
+    color: var(--Very-dark-grayish-blue);
+}
+.kira .verified {
+    color: hsla(217.1, 19.1%, 34.9%, 0.5);
+}
+.kira h1{
+    width: 10rem;
+    color: var(--Very-dark-grayish-blue);
+}
+.kira p {
+    color: hsla(217.1, 19.1%, 34.9%, 0.7);
+}
+
+
+.Patrick {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: 2 / 4;
+    grid-row:  2 / 3;
+}
+.Patrick img {
+    border: 0.15rem solid var(--Moderate-violet);
+}
+
+.jeanette{
+    background-color: var(--White);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.jeanette .name {
+    color: var(--Very-dark-grayish-blue);
+}
+.jeanette .verified {
+    color: hsla(217.1, 19.1%, 34.9%, 0.5);
+}
+.jeanette h1{
+    width: 10rem;
+    color: var(--Very-dark-grayish-blue);
+}
+.jeanette p {
+    color: hsla(217.1, 19.1%, 34.9%, 0.7);
+}
+
+
+
+@media (max-width:1326px) {
+    .container {
+        height: 39rem;
+    }
+    
+}
+
+@media (max-width:1267px) {
+    .container {
+        height: 41rem;
+    }
+    .Daniel h1 {
+        width: auto;
+    }
+}
+
+@media (max-width:1157px) {
+    .container {
+        height: 45rem;
+    }}
+    @media (max-width:1105px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+       
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+.card {
+
+overflow:visible;
+
+
+}
+
+}
+.jonathan h1 {
+    width: auto;
+}
+ 
+        
+
+
+        
+@media (max-width:892px) {
+.Daniel .qoute {
+    bottom: -10.7rem;
+}
+@media (max-width:710px) {
+    .Daniel .qoute {
+        bottom: -9.5rem;    }
+
+
+
+}
+
+@media (max-width:586px) {
+    .Daniel .qoute {
+        bottom: -8.3rem;}
+}
+@media (max-width:517px) {
+    .Daniel .qoute {
+        bottom: -7rem;}
+}
+@media (max-width:463px) {
+    .Daniel .qoute {
+        bottom: -4.8rem;
+    right: 1rem;
+}
+ .Daniel p {
+    padding-top: 6rem;
+ }
+ .Patrick p {
+    padding-top: 6rem;
+ }
+
+
+
+
+}
+    @media (max-width:418px) {
+        .Daniel .qoute {
+            bottom: -4.5rem;}
+    }
+}
+
+
+@media (max-width:375px) {
+    .Daniel .qoute {
+        bottom: -2.5rem;}
+        .Patrick p {
+            padding-top: 8rem;
+         }
+        
+}
+
+    
